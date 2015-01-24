@@ -27,7 +27,7 @@ makeCacheMatrix <- function(GlobInvMx = matrix() ) {
 ## cacheSolve function gets a matrix as input and verify if it has changed since the last inverse calculation. If it has not, it retrieves
 ## the inverse of the input matrix from the cache and returns it's vaule. If the input matrix has changed or there is no inverse matrix value in cache, it computes the inverse, save it to the global variable and returns the inverse matrix
 
-1cacheSolve <- function(InputMx, ...) {
+cacheSolve <- function(InputMx, ...) {
     Mx <- InputMx$getmean()
     
     if(!is.null(Mx)) {
